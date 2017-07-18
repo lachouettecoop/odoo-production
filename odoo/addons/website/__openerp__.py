@@ -11,7 +11,7 @@ OpenERP Website CMS
 ===================
 
         """,
-    'depends': ['web', 'web_editor', 'web_planner'],
+    'depends': ['portal', 'web', 'web_editor', 'web_planner'],
     'installable': True,
     'data': [
         'data/data.xml',
