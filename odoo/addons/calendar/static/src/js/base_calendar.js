@@ -45,7 +45,7 @@ function reload_favorite_list(result) {
             label: _lt("Everybody's calendars"),
             color: self.get_color(-1),
             avatar_model: self.avatar_model,
-            is_checked: false
+            is_checked: true
         };
         sidebar_items[-1] = filter_item;
         //Get my coworkers/contacts
