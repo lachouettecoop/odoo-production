@@ -10,9 +10,4 @@ import openerp.addons.decimal_precision as dp
 class ProductProduct(models.Model):
     _inherit = 'product.product'
 
-    scale_logo_code = fields.Char(
-        related="product_tmpl_id.scale_logo_code",
-        string="Scale Logo Code",
-        readonly=True,
-        store=True)
     volume = fields.Float(digits=dp.get_precision('Volume'))
