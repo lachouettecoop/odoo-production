@@ -10,4 +10,5 @@ import openerp.addons.decimal_precision as dp
 class ProductProduct(models.Model):
     _inherit = 'product.product'
 
+    weight_net = fields.Float(digits=dp.get_precision('Net Weight'))
     volume = fields.Float(digits=dp.get_precision('Volume'))
