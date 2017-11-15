@@ -20,7 +20,7 @@ class product_product(Model):
         'scale_sequence': fields.integer(
             string='Scale Sequence'),
         'scale_tare_weight': fields.float(
-            digits_compute=dp.get_precision('Stock Weight'),
+            digits_compute=dp.get_precision('Net Weight'),
             string='Scale Tare Weight',  help="Set here Constant tare weight"
             " for the given product. This tare will be substracted when"
             " the product is weighted. Usefull only for weightable product.\n"
